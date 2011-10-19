@@ -1,0 +1,7 @@
+Potential places to parallelize in khmer code:
+
+* ktable.consume(sequence)
+
+It appears that consume( ) sequencially splits a read into k-mers.  We could parallelize this either by:
+1) Splitting up reads, and distributing to individual multi-processors
+2) Giving multiple reads to individual multi-processors, and letting a stream processor work on its own read
