@@ -1,0 +1,7 @@
+Parallel Documentation for khmer
+
+Overview: CUDA C parallel implementation of khmer
+
+Commands:
+
+
